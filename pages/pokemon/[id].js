@@ -10,7 +10,7 @@ export default function Details() {
         query: {id},
     } = useRouter();
 
-    const [pokemon, setPokemon] = useState([]);
+    const [pokemon, setPokemon] = useState(null);
 
     useEffect(() => {
         async function getPokemon() {
